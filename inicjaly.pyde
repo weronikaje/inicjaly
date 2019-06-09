@@ -13,7 +13,7 @@ def setup():
 def draw():
     
     if keyPressed:
-        if key=='w' or keyCode ==37: 
+        if key=='w' or keyCode ==37:  # bardzo dobre rozwiązanie, by spiąć to razem
             background(200)
             textSize(300)
             fill(255,0,255)
@@ -21,11 +21,6 @@ def draw():
             textSize(250)
             fill(40,10,30)
             text("j" , width/2+ 100 , height/2 )
-            
-   
-    
-
-    if keyPressed:
         if key=='j' or keyCode ==39: 
             background(200)
             textSize(300)
@@ -35,6 +30,7 @@ def draw():
             fill(40,10,30)
             text("w" , width/2- 100 , height/2 )   
             
+            # brakuje obsługi najechania myszą
     
     tr = createShape()
     tr.beginShape()
